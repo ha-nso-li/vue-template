@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { useCounterStore } from '@/stores/counter';
 
 defineProps<{ msg: string }>();
 
-const count = ref(0);
+const countStore = useCounterStore();
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" @click="countStore.increment()">count is {{ countStore.count }}</button>
     <p>
       Edit
-      <code>components/HelloWorld.vue</code> to test HMR
+      <code>components/HelloWorldComponent.vue</code> to test HMR
     </p>
   </div>
 
