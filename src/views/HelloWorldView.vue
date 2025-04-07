@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HelloWorld from '@/components/HelloWorldComponent.vue';
+import HelloWorldComponent from '@/components/HelloWorldComponent.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import HelloWorld from '@/components/HelloWorldComponent.vue';
       <img src="@/assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorldComponent msg="Vite + Vue" />
 </template>
 
 <style lang="scss" scoped>
