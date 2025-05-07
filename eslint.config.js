@@ -11,7 +11,7 @@ export default typescriptEslint.config(
       ...typescriptEslint.configs.recommended,
       ...eslintPluginVue.configs['flat/recommended']
     ],
-    files: ['**/*.{ts,vue,js}'],
+    files: ['src/**/*.{ts,vue}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -19,8 +19,7 @@ export default typescriptEslint.config(
       parserOptions: {
         parser: typescriptEslint.parser
       }
-    },
-    rules: { 'vue/multi-word-component-names': ['error', { ignores: ['App'] }] }
+    }
   },
   eslintPluginPrettierRecommended
 );
